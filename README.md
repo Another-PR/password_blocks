@@ -1,4 +1,4 @@
-# password_blocks
+## password_blocks
 
 A new Flutter application.
 
