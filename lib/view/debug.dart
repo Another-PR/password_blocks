@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:password_blocks/view/main_menu.dart';
 
 class DebugPage extends StatelessWidget {
+  static const String route = '/debug';
   const DebugPage({Key? key}) : super(key: key);
 
   @override

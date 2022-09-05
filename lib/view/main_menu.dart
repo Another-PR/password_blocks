@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:password_blocks/constants.dart';
+import 'package:password_blocks/view/debug.dart';
+import 'package:password_blocks/view/home.dart';
+import 'package:password_blocks/view/login_screen.dart';
 
 class MainMenu extends StatelessWidget {
   const MainMenu({Key? key}) : super(key: key);
@@ -15,16 +18,22 @@ class MainMenu extends StatelessWidget {
           ListTile(
             title: const Text('Home'),
             onTap: () {
-              Navigator.of(context).pushReplacementNamed('/home');
+              Navigator.of(context).pushReplacementNamed(HomePage.route);
             },
           ),
           if (DEBUG_MODE)
             ListTile(
               title: const Text('Debug'),
               onTap: () {
-                Navigator.of(context).pushReplacementNamed('/debug');
+                Navigator.of(context).pushReplacementNamed(DebugPage.route);
               },
-            )
+            ),
+          ListTile(
+            title: const Text('Login'),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed(LoginScreen.route);
+            },
+          ),
         ],
       ),
     );

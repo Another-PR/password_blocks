@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:password_blocks/view/debug.dart';
 import 'package:password_blocks/view/home.dart';
+import 'package:password_blocks/view/login_screen.dart';
+import 'package:password_blocks/view/signup_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,15 +23,29 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
       onGenerateRoute: (settings) {
         switch (settings.name) {
-          case '/home':
+          case HomePage.route:
             return PageTransition(
               child: HomePage(),
               type: PageTransitionType.fade,
               settings: settings,
             );
-          case '/debug':
+          case DebugPage.route:
             return PageTransition(
               child: DebugPage(),
+              type: PageTransitionType.fade,
+              settings: settings,
+              // reverseDuration: Duration(seconds: 3),
+            );
+          case LoginScreen.route:
+            return PageTransition(
+              child: LoginScreen(),
+              type: PageTransitionType.fade,
+              settings: settings,
+              // reverseDuration: Duration(seconds: 3),
+            );
+          case SignupScreen.route:
+            return PageTransition(
+              child: SignupScreen(),
               type: PageTransitionType.fade,
               settings: settings,
               // reverseDuration: Duration(seconds: 3),

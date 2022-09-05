@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:password_blocks/view/main_menu.dart';
 
 class HomePage extends StatelessWidget {
+  static const String route = '/home';
   const HomePage({Key? key}) : super(key: key);
 
   @override
