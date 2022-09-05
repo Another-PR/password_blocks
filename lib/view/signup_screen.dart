@@ -19,7 +19,7 @@ class _SignupScreenState extends State<SignupScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // title: Text('Signup Screen'),
+        title: Text('Signup Screen'),
       ),
       endDrawer: const MainMenu(),
       body: Padding(
