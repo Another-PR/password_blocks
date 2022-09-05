@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "272271046210",
+    "project_id": "password-blocks",
+    "storage_bucket": "password-blocks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272271046210:android:ee555eecb912e74eb6dfdb",
+        "android_client_info": {
+          "package_name": "com.example.password_blocks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272271046210-49sr3bppv2g5nuh224fhilc8qgig8td4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDML-W-mMFpUGuyb2NjhxEHDiHybCFBwSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272271046210-49sr3bppv2g5nuh224fhilc8qgig8td4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
