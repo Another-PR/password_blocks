@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'main_menu.dart';
+import '../main_menu.dart';
 
 class SignupScreen extends StatefulWidget {
   static const route = '/signup-screen';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:password_blocks/view/signup_screen.dart';
-import 'main_menu.dart';
+import 'package:password_blocks/view/screens/signup_screen.dart';
+import '../main_menu.dart';
 
 class LoginScreen extends StatelessWidget {
   static const route = '/login-screen';
