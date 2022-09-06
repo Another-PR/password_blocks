@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:password_blocks/view/debug.dart';
-import 'package:password_blocks/view/home.dart';
-import 'package:password_blocks/view/login_screen.dart';
-import 'package:password_blocks/view/signup_screen.dart';
+import 'package:password_blocks/view/screens/home.dart';
+import 'package:password_blocks/view/screens/login_screen.dart';
+import 'package:password_blocks/view/screens/signup_screen.dart';
 
 void main() {
   runApp(const MyApp());

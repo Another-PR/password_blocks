@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:password_blocks/constants.dart';
 import 'package:password_blocks/view/debug.dart';
-import 'package:password_blocks/view/home.dart';
-import 'package:password_blocks/view/login_screen.dart';
+import 'package:password_blocks/view/screens/home.dart';
+import 'package:password_blocks/view/screens/login_screen.dart';
 
 class MainMenu extends StatelessWidget {
   const MainMenu({Key? key}) : super(key: key);

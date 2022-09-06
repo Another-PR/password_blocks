@@ -1,0 +1,8 @@
+[
+  { "id": 1, "userName": "john@facebook.com", "password": "zAxhufOPLJJ###qwert" },
+  { "id": 2, "userName": "john@gmail.com", "password": "zAxhufOPLJJ###qwert" },
+  { "id": 3, "userName": "john@yahoo.com", "password": "zAxhufOPLJJ###qwert" },
+  { "id": 4, "userName": "john@reddit.com", "password": "zAxhufOPLJJ###qwert" },
+  { "id": 5, "userName": "john@mangaplus.com", "password": "zAxhufOPLJJ###qwert" },
+  { "id": 6, "userName": "john@anotherpr.com", "password": "zAxhufOPLJJ###qwert" }
+]
