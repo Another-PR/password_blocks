@@ -31,26 +31,26 @@ class UserPassInfoCard extends StatelessWidget {
     );
   }
 
-  popDetails(context, size){
+  popDetails(context, size) {
     return showDialog(
-            context: context,
-            builder: (context) {
-              return Dialog(
-                child: SizedBox(
-                  width: size.width * 0.3,
-                  height: size.height * 0.1,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Spacer(),
-                      Text('Username: ' + data['userName']),
-                      const Spacer(),
-                      Text('Password: '+data['password']),
-                      const Spacer(),
-                    ],
-                  ),
-                ),
-              );
-            });
+        context: context,
+        builder: (context) {
+          return Dialog(
+            child: SizedBox(
+              width: size.width * 0.3,
+              height: size.height * 0.1,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Spacer(),
+                  Text('Username: ' + data['userName']),
+                  const Spacer(),
+                  Text('Password: ' + data['password']),
+                  const Spacer(),
+                ],
+              ),
+            ),
+          );
+        });
   }
 }

@@ -14,7 +14,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,13 +32,14 @@ class _HomePageState extends State<HomePage> {
               var data = json.decode(snapshot.data.toString());
               return ListView.builder(
                 itemBuilder: (_, index) {
-                  return UserPassInfoCard(data: data[index],);
+                  return UserPassInfoCard(
+                    data: data[index],
+                  );
                 },
                 itemCount: data.length,
               );
-            } else {
-              return const CircularProgressIndicator();
             }
+            return const Center(child: CircularProgressIndicator());
           },
         ));
   }
