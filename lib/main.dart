@@ -4,9 +4,17 @@ import 'package:password_blocks/view/debug.dart';
 import 'package:password_blocks/view/screens/home.dart';
 import 'package:password_blocks/view/screens/login_screen.dart';
 import 'package:password_blocks/view/screens/signup_screen.dart';
+import 'package:password_blocks/view/widgets/wrapper.dart';
+import 'package:password_blocks/view_model/metaMaskProvider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (_)=>MetaMaskProvider())
+    ],
+    child: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: Wrapper(),
       onGenerateRoute: (settings) {
         switch (settings.name) {
           case HomePage.route:
