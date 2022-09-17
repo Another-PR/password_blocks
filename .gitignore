@@ -8,6 +8,7 @@
 .buildlog/
 .history
 .svn/
+/blockchain_module/node_modules
 
 # IntelliJ related
 *.iml
