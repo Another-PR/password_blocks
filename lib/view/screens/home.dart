@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:password_blocks/model/utility.dart';
 import 'package:password_blocks/view/main_menu.dart';
 import 'dart:convert';
@@ -14,8 +15,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
   @override
   Widget build(BuildContext context) {
+    readJson();
     return Scaffold(
         endDrawer: const MainMenu(),
         appBar: AppBar(
@@ -23,7 +26,7 @@ class _HomePageState extends State<HomePage> {
             icon: const Icon(Icons.add),
             onPressed: () {},
           ),
-          title: const Center(child: Text('Block Pass')),
+          title:  Center(child: Text("Block Pass")),
         ),
         body: FutureBuilder(
           future: fetchUserPasswords(),
@@ -42,5 +45,12 @@ class _HomePageState extends State<HomePage> {
             return const Center(child: CircularProgressIndicator());
           },
         ));
+  }
+
+  Future<void> readJson() async {
+    final String response = await rootBundle.loadString('blockchain_module/ethereum/build/BuilderContract.json');
+    final data = await json.decode(response);
+    print(data["interface"]);
+    // ...
   }
 }
